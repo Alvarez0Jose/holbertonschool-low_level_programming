@@ -17,4 +17,4 @@ int main(void)
 	printf("Size of float: %zu bytes\n", sizeof(doubleType));
 	printf("Size of char: %zu bytes\n", sizeof(charType));
 	return (0);
-
+}
