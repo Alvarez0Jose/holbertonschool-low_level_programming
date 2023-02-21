@@ -5,21 +5,21 @@
 */
 int main(void)
 {
-	char a = 'a';
+	char c = 'a';
 
-	int l = '0';
+	int d = '0';
 
 	while
-		(l < 10)
+		(d < 10)
 		{
-			putchar(l + '0');
-			l++;
+			putchar(d + '0');
+			d++;
 		}
 	while
-		(a <= 'a')
+		(c <= 'f')
 		{
-			putchar(a);
-			a++;
+			putchar(c);
+			c++;
 		}
 	putchar('\n');
 	return (0);
