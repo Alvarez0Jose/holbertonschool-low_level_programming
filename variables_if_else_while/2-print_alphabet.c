@@ -6,10 +6,14 @@
 
 int main(void)
 {
-	/*print all lowercase letters*/
-	putchar (lower_x);
-	putchar ('\n');
-	getch();
+	char c;
+	c = 'a';
 
-	for (int = x 'a'; x <= 'z'; x++)
+	while
+		(c <= 'z') {
+			putchar(c);
+			c++;
+		}
+	putchar('\n');
+	return (0);
 }
