@@ -7,9 +7,9 @@
 int main(void)
 {
 	/*print all lowercase letters*/
-	putchar (ch);
+	putchar (lower_x);
 	putchar ('\n');
 	getch();
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (int = x 'a'; x <= 'z'; x++)
 }
