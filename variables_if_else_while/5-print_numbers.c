@@ -14,6 +14,6 @@ int main(void)
 		printf("%d\n", num % 10);
 		num = num / 10;
 	}
-	putchar ("\n");
+	putchar ('\n');
 	return (0);
 }
