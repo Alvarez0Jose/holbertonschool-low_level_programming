@@ -19,7 +19,7 @@ int main(void)
 		putchar (x);
 		x++;
 	}
-	while (y <= 'z')
+	while (y <= 'Z')
 	{
 		putchar (y);
 		y++;
