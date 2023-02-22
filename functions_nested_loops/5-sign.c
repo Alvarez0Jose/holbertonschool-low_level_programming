@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * print_sign - entry
- * Return: 1 (greater that zero) 0 (zero) -1 (less than zero)
+ * Return: 1 (greater that zero) 0 (zero) -1 (less than zero)i
+ * @n: placeholder
  */
 
 int print_sign(int n)
