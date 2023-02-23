@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _abs(int) - entry point
+ * _abs - entry point
  * Return: i (success)
  *@i: placeholder
  */
