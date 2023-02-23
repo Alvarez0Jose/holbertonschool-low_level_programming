@@ -11,7 +11,13 @@ int print_last_digit(int DIG)
 	x = (DIG % 10);
 
 	if (x > 0)
-		return (DIG);
+	{
+		_putchar(x);
+		return (x);
+	}
 	else
-		return (-DIG);
+	{
+		_putchar(x);
+		return (-x);
+	}
 }
