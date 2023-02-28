@@ -8,13 +8,12 @@ void print_rev(char *s)
 	int A;
 	int B;
 
-	for (A = *s; A != '\0'; A++)
+	for (A = 0; s[A] != '\0'; A++)
 	{
 	}
-	for (B = A; B > 0; B--)
+	for (B = -1; B >= 0; B--)
 	{
-		_putchar(*s);
-		A--;
+		_putchar(s[B]);
 	}
 	_putchar('\n');
 }
