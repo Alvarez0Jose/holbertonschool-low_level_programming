@@ -20,5 +20,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		{
 			*pdest++ = *psrc++;
 		}
-	return(dest);
+	return (dest);
 }
