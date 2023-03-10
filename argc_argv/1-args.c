@@ -8,8 +8,15 @@
  * Return: number of arguments
  */
 
-int main(int argc, char **argv __attribute__((unused)))
+int main(int argc, char *argv[] __attribute__((unused)))
 {
+	int i;
+
 	printf("%d\n", argc);
-	return (0);
+
+	for (i = 1; i < argc; i++)
+	{
+		printf("%d\n", i);
+	}
+		return (0);
 }
