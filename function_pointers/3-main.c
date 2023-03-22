@@ -9,7 +9,7 @@
 
 int main(int argc, int *argv[])
 {
-	int a, b, c;
+	int a, b, *c, d;
 
 	int (*op_func)(int, int);
 
@@ -18,17 +18,34 @@ int main(int argc, int *argv[])
 		printf("Error\n");
 		return (98);
 	}
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-	op_func = get_op_func(argv[2]);
 
-	if (op_func == NULL || argv[2][1] != '\0')
+	c = 0;
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
+	op_func = get_op_func(argv[3]);
+
+	if ((argv[1][c]) != '\0' && a[c])
+	&&(argv[2][c] != '\0' && b[c])
+	&& (argv[3][c] != '\0' && op_func)
+	c++;
+	{
+
+	if (op_func == NULL || c != 3)
+
 	{
 		printf("Error\n");
 		return (99);
+
 	}
-	c = op_func(a, b);
-	printf("%d\n", c);
+	}
+	else
+	{
+		printf("Error\n");
+		return (99);
+		}
+
+	d = op_func(a, b);
+	printf("%d\n", d);
 
 		return (0);
 }
