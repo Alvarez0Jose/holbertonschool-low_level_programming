@@ -21,7 +21,6 @@ int (*get_op_func(char *s))(int, int)
 	int a;
 
 	a = 0;
-	
 
 	while (a < 5)
 	{
