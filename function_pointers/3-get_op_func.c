@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <string.h>
 
 /**
  * get_op_func - sees what function satisfies the operator needed
@@ -20,10 +21,11 @@ int (*get_op_func(char *s))(int, int)
 	int a;
 
 	a = 0;
+	
 
-	while (ops[a].op != NULL)
+	while (a < 5)
 	{
-		if (*ops[a].op == *s)
+		if (strcmp(ops[a].op, s) == 0)
 		{
 			return (ops[a].f);
 		}
