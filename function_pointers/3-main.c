@@ -7,9 +7,9 @@
  * Return: 0 on success or 98, 99 or 100 on failure
  */
 
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
-	int a, b, *c, d;
+	int a, b, d;
 
 	int (*op_func)(int, int);
 
@@ -19,30 +19,17 @@ int main(int argc, int *argv[])
 		return (98);
 	}
 
-	c = 0;
 	a = atoi(argv[1]);
 	b = atoi(argv[2]);
 	op_func = get_op_func(argv[3]);
 
-	if ((argv[1][c]) != '\0' && a[c])
-	&&(argv[2][c] != '\0' && b[c])
-	&& (argv[3][c] != '\0' && op_func)
-	c++;
-	{
 
-	if (op_func == NULL || c != 3)
+	if (op_func == NULL)
 
 	{
 		printf("Error\n");
 		return (99);
-
 	}
-	}
-	else
-	{
-		printf("Error\n");
-		return (99);
-		}
 
 	d = op_func(a, b);
 	printf("%d\n", d);
