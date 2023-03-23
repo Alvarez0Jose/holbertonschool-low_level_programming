@@ -24,8 +24,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 	}
 	if (separator == NULL)
+	{
 		separator = ", ";
-	
+		exit(1);
+	}
+
 	va_end(args);
 
 	printf("\n");
