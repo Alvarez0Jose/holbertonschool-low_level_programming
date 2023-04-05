@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print _dlistint - prints all of the elements on the dlistint
+ * print_dlistint - prints all of the elements on the dlistint
  * @h: pointer to the head of the list in the dlistint
  * Return: the number of elements in the dlistint
  */
