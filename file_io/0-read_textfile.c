@@ -1,8 +1,11 @@
 #include "main.h"
-#include <fcntl.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/uio.h>
+
+/**
+ *read_textfile - reads the ammount of bytes that are in a file
+ *@filename: the name of the file being analyzed
+ *@letters: the ammount of letters in the file
+ *Return: the bytes read
+ */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
